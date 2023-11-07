@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Side-bar{
+    background-color: black;
+    min-height: 100vh;
+    width: 500px;
+    transform: translateX(-470px);
+    position: absolute;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+}
+
+.btn-btn{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Side-bar:hover{
+    transform: translateX(0px);
+    transition: 2s ease-in-out;
+}
+
+
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.product-container{
+    background-color: rgb(232, 227, 227);
+
+    margin: 30px;
+}
