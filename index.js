@@ -5,7 +5,7 @@ let body = document.querySelector('body');
 
 
 activateSidebar.addEventListener('click', () => {
-    body.classList.remove("")
+    body.classList.add("active")
 })
 
 function dataOrigin(){

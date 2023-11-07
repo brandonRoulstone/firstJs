@@ -40,3 +40,11 @@
 
     margin: 30px;
 }
+
+/* .active .product-container{
+    left: calc(100% - 500px);
+}
+.active #root{
+    transform: translate(-200px);
+    background-color: violet;
+} */
