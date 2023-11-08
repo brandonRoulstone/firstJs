@@ -1,12 +1,17 @@
 let productsContainer = document.getElementById('products');
 let activateSidebar = document.getElementById('btnActive');
+let btnClose = document.getElementById('close');
 let body = document.querySelector('body');
 
 
 
 activateSidebar.addEventListener('click', () => {
-    body.classList.add("active")
-})
+    body.classList.add("Side-bar")
+});
+
+btnClose.addEventListener('click', () => {
+    body.classList.remove("Side-bar")
+});
 
 function dataOrigin(){
     // fetch data
@@ -36,7 +41,6 @@ function renderProducts(products) {
               </div>
              <h2 class="title">${item.title}</h2>
              <p class="price">$ ${item.price}</p>
-             <p>${item.description}</p>
              <p>${item.category}</p>
              <div class="button">
                  <button id="purchase">Click me</button>
